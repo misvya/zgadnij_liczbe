@@ -1,3 +1,4 @@
+import java.util.Random;
 import java.util.Scanner;
 
 public class Main {
@@ -73,5 +74,23 @@ public class Main {
                     default -> "Może innym razem";
                 }
         );
+
+        //losujemy liczbe i zgadujemy 10 razy
+        Random random = new Random();
+        wylosowanaLiczba = random.nextInt(1,101);
+
+        for (int i = 0; i < 10; i++){
+            System.out.println("Podaj liczbę");
+            wpisanaLiczba = scanner.nextInt();
+            if(wpisanaLiczba == wylosowanaLiczba){
+                System.out.println("brawo");
+                break;
+            }
+            if(wpisanaLiczba > wylosowanaLiczba){
+                System.out.println("Za dużo");
+            }else{
+                System.out.println("Za mało");
+            }
+        }
     }
 }
