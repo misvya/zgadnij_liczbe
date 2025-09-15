@@ -12,7 +12,7 @@ public class Main {
         System.out.println("Liczba całkowita " + liczba4);
         //typy zmiennoprzecinkowe
         float liczba5 = 23.65f; //na końcu litera f
-        double liczba6 = 235.54654;
+        double liczba6 = 235.524654;
         //typ logiczny
         boolean czyPrawda = true; //false
         //typ znakowy
